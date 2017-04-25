@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+	<title>Reproductor de audio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Desarrollo de ejercicio Reproductor de Audio de la Lección 14: HTML">
+	<meta name="author" content="Caterina Da Silva">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h3>Spotimiau</h3>
+		</div>
+	</header>
+	<section id="cuerpo">
+		<div class="container">
+			<div id="reproductor">
+
+		<h3>Télépopmusik</h3>
+		<h1>Breath (Fhin Flip remix)</h1>
+				<audio id="spotimiau" src="media/Telepopmusik-Breath(FhinFlip).mp3" controls>
+					<p>Tu navegador no implementa el elemento audio</p>
+				</audio>
+				<img src="img/cover.png" alt="album cover">
+				<div class="btn-nav">
+				  	<button class="btn" onclick="document.getElementById('spotimiau').play()">Play</button>
+				  	<button class="btn" onclick="document.getElementById('spotimiau').pause()">Pause</button>
+				  	<button class="btn" onclick="document.getElementById('spotimiau').volume-=0.1">Vol-</button>
+				  	<button class="btn" onclick="document.getElementById('spotimiau').volume+=0.1">Vol+</button>
+			  	</div>				
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<small>Desarrollado por Caterina Da Silva</small>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
